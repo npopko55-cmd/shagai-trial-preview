@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Пробная шагательная тренировка | Шагай Дома</title>
+<meta name="description" content="Попробуйте бесплатно шагательную тренировку для похудения — одна короткая тренировка дома с Настей. Если захочется продолжить, абонемент в клуб «Шагай Дома» оформляется на этой же странице." />
+<meta property="og:title" content="Попробуйте бесплатно шагательную тренировку для похудения | Шагай Дома" />
+<meta property="og:description" content="Одна короткая тренировка дома, под музыку, с тренером Настей. Абонемент в клуб — на этой же странице." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&family=Unbounded:wght@500&family=Sofia+Sans+Extra+Condensed:ital,wght@1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=trial-3" />
+</head>
+<body>
+
+<!-- ============================================================
+     1. ПЕРВЫЙ ЭКРАН — пробная тренировка
+     H1 — согласованная формулировка Никиты, 23.11.2026.
+     Подзаголовок без обещания результата похудения (оферта п. 6.1).
+     Видео: нативный <video>, src video/trial.mp4. Пока файла нет —
+     подписанная заглушка (см. script.js).
+     ============================================================ -->
+<section class="hero hero--trial" id="top">
+  <div class="hero__panel" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__content">
+      <a class="logo" href="#top" aria-label="Шагай Дома"><img src="assets/logo.svg" alt="Шагай Дома" width="200" height="93" /></a>
+      <span class="pill">Пробная тренировка</span>
+      <h1 class="hero__title">Попробуйте бесплатно шагательную тренировку для похудения</h1>
+      <p class="hero__lead">Одна короткая тренировка дома, под музыку, с тренером Настей: 4,5 минуты, «Мираж — Музыка нас связала». Смотрите прямо на этой странице — без зала и без подготовки. Если захочется продолжить, абонемент в клуб оформляется здесь же, от 1&nbsp;600&nbsp;₽ за 1&nbsp;месяц.</p>
+      <div class="hero__actions">
+        <a class="btn btn--red btn--hero" href="#trial" id="trialCta" data-goal="hero-play">Включить тренировку <span class="btn__arrow" aria-hidden="true"></span></a>
+        <a class="btn btn--ghost" href="#tarify" data-goal="hero-tariffs">Смотреть абонементы</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <figure class="trial-slot" id="trial">
+        <div class="trial-slot__frame is-empty" id="trialFrame">
+          <video id="trialVideo" controls playsinline preload="metadata" src="video/trial.mp4" poster="video/poster.jpg" title="Пробная тренировка: Мираж — Музыка нас связала, с Настей">
+            Ваш браузер не воспроизводит встроенное видео.
+          </video>
+          <div class="trial-slot__ph" id="trialPlaceholder">
+            <strong>Пробная тренировка</strong>
+            <span>Ролик появится здесь, как только файл будет на странице. «Мираж — Музыка нас связала», с Настей, 4,5 минуты. Программа «Русские хиты».</span>
+          </div>
+        </div>
+        <figcaption class="trial-slot__cap">Мираж — Музыка нас связала · с Настей · 4,5 минуты · программа «Русские хиты»</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. КОРОТКИЙ СЮЖЕТ / БОЛЬ
+     Без вымышленных отзывов и без обещания кг.
+     ============================================================ -->
+<section class="band band--white" id="pain">
+  <div class="wrap pain">
+    <h2 class="h2">Сначала — один короткий шаг</h2>
+    <p>Знакомо: снова обещаете себе начать с понедельника, а вечером сил хватает только добраться до дивана. Новый зал, новая программа — и снова откладывается.</p>
+    <p>Можно начать проще: включить одну короткую тренировку дома, в своём темпе. Без сбора сумки и без экзамена самой себе.</p>
+    <p>Если этот вечер снова отложить, легко откладывать и дальше. Поэтому шаг небольшой: сначала просто пошагать.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. МЕТОД — только формулировки с главной и из FAQ
+     ============================================================ -->
+<section class="band band--white" id="method">
+  <div class="wrap">
+    <h2 class="h2">Как это устроено</h2>
+    <ul class="mlist mlist--trial">
+      <li><b>Дома, под музыку</b><span>Шагаете у себя. Не нужно быть спортивной и уметь танцевать. Не нужно собирать сумку или выкраивать дорогу в зал.</span></li>
+      <li><b>В записи, в любое время</b><span>Все тренировки клуба — в записи. Их можно смотреть, когда удобно, с телефона, планшета, компьютера или телевизора.</span></li>
+      <li><b>Короткий старт</b><span>Для новичка, по FAQ клуба, достаточно 15&nbsp;минут. Эта пробная тренировка ещё короче: 4,5 минуты.</span></li>
+      <li><b>Единый абонемент на всё</b><span>В клубе «Шагай Дома»: 400+ шагательных тренировок и 25&nbsp;программ, 60 рецептов полезной еды и вебинары про здоровье, 30 тренировок для здоровья спины и растяжки, план недели, Шагай.FM, чат участников и поддержка куратора.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. ТРЕНЕР
+     Био — с главной walk-walk.ru, 23.11.2026.
+     Фото — из примеров лендингов Шагай (Настя). Не подписываем
+     «кадр с этой тренировки»: прямого подтверждения нет.
+     ============================================================ -->
+<section class="band band--red band--coach" id="coach">
+  <div class="wrap coach">
+    <figure class="photo photo--coach"><img src="assets/nastya.webp" alt="Настя, тренер клуба «Шагай Дома»" width="640" height="960" loading="eager" /></figure>
+    <div class="coach__content">
+      <h2 class="h2 coach__title"><span>Настя</span> — ваш тренер на этой тренировке</h2>
+      <p class="coach__text">КМС по художественной гимнастике, тренер с опытом 12 лет. Инструктор по функциональному тренингу.</p>
+      <a class="btn btn--white coach__btn" href="#tarify" data-goal="coach-cta">Смотреть абонементы <span class="btn__arrow" aria-hidden="true"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. ТАРИФЫ — клуб с официальной главной walk-walk.ru, 23.11.2026.
+     НЕ оффер и НЕ виджеты Табаты 3.0.
+     Виджеты и sid — с боевых страниц чекаута:
+       1 месяц  /1-month   widget 1653253  sid 852cb1c8d448f43cf1ed5555d42c9b2234b0fbb2
+       3 месяца /3-months  widget 1652757  sid 9c998cb66c8fb1162435f33d02a4d9a2f8efaace
+       6 месяцев /6-months widget 1652759  sid 93608cc4841c76eaa458303fd4ef10d0faa41302
+       1 год    /all       widget 1652760  sid 1724567a7e83d6cd8c270ea091abe386a48ca647
+     Подключение как на чекауте:
+     <script id="{sid}" src="https://my.walk-walk.ru/pl/lite/widget/script?id={widget}">
+     Зачёркнутые суммы — как на тех же страницах чекаута.
+     ============================================================ -->
+<section class="band band--white" id="tarify">
+  <div class="wrap">
+    <h2 class="h2 tariffs__title">Клуб «Шагай Дома» <span>— единый абонемент на всё</span></h2>
+    <p class="lead tariffs__lead">Выберите срок абонемента. Оплата — на этой же странице.</p>
+    <article class="club">
+      <div class="club__info">
+        <p class="club__title">В любом тарифе:</p>
+        <ul class="rate__features">
+          <li>400+ шагательных тренировок и 25&nbsp;программ</li>
+          <li>60 рецептов полезной еды и вебинары про здоровье</li>
+          <li>30 тренировок для здоровья спины и растяжки</li>
+          <li>План недели — расписание тренировок на каждый день</li>
+          <li>Шагай.FM — нон-стоп фитнес-эфир с тренером</li>
+          <li>Чат участников и поддержка куратора</li>
+        </ul>
+      </div>
+      <div class="club__buy">
+        <p class="club__hint">Срок абонемента</p>
+        <div class="terms" role="radiogroup" aria-label="Срок абонемента" id="termsBox">
+          <button class="term" type="button" role="radio" aria-checked="false" data-term="1 месяц" data-price="1&nbsp;600&nbsp;₽" data-inst="267" data-widget="1653253" data-sid="852cb1c8d448f43cf1ed5555d42c9b2234b0fbb2" data-goal="buy-1m" data-href="https://walk-walk.ru/1-month"><span class="term__m">1&nbsp;месяц</span><span class="term__per">Попробовать формат</span><b class="term__p"><s class="term__old">4&nbsp;570&nbsp;₽</s>1&nbsp;600&nbsp;₽</b></button>
+          <button class="term" type="button" role="radio" aria-checked="false" data-term="3 месяца" data-price="3&nbsp;200&nbsp;₽" data-inst="533" data-widget="1652757" data-sid="9c998cb66c8fb1162435f33d02a4d9a2f8efaace" data-goal="buy-3m" data-href="https://walk-walk.ru/3-months"><span class="term__m">3&nbsp;месяца</span><span class="term__per">1&nbsp;067&nbsp;₽ в&nbsp;месяц</span><b class="term__p"><s class="term__old">9&nbsp;190&nbsp;₽</s>3&nbsp;200&nbsp;₽</b></button>
+          <button class="term is-on" type="button" role="radio" aria-checked="true" data-term="6 месяцев" data-price="4&nbsp;400&nbsp;₽" data-inst="734" data-widget="1652759" data-sid="93608cc4841c76eaa458303fd4ef10d0faa41302" data-goal="buy-6m" data-href="https://walk-walk.ru/6-months"><span class="term__m">6&nbsp;месяцев <i>Хит продаж</i></span><span class="term__per">734&nbsp;₽ в&nbsp;месяц</span><b class="term__p"><s class="term__old">13&nbsp;190&nbsp;₽</s>4&nbsp;400&nbsp;₽</b></button>
+          <button class="term" type="button" role="radio" aria-checked="false" data-term="1 год" data-price="6&nbsp;400&nbsp;₽" data-inst="1067" data-widget="1652760" data-sid="1724567a7e83d6cd8c270ea091abe386a48ca647" data-goal="buy-12m" data-href="https://walk-walk.ru/all"><span class="term__m">1&nbsp;год <i>Выгоднее всего</i></span><span class="term__per">533&nbsp;₽ в&nbsp;месяц</span><b class="term__p"><s class="term__old">18&nbsp;286&nbsp;₽</s>6&nbsp;400&nbsp;₽</b></button>
+        </div>
+        <button class="btn btn--red btn--block club__btn" type="button" id="payOpen" aria-haspopup="dialog" aria-controls="payDlg" data-goal="pay-open">Оформить на&nbsp;<span id="payTerm">6&nbsp;месяцев</span> за&nbsp;<span class="club__sum" id="paySum">4&nbsp;400&nbsp;₽</span> <span class="btn__arrow" aria-hidden="true"></span></button>
+        <p class="club__inst" id="payInst">Доступна рассрочка: 6&nbsp;платежей по&nbsp;734&nbsp;₽</p>
+        <p class="legal-note">Обещания гарантированного похудения в договор не входят. Условия оплаты, отказа и возврата — в <a href="https://walk-walk.ru/offer" target="_blank" rel="noopener">публичной оферте</a>.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. FAQ — официальные ответы с главной walk-walk.ru, 23.11.2026.
+     Плюс вопрос об отказе — формулировка по публичной оферте, без упрощения до «14 дней 100%».
+     ============================================================ -->
+<section class="band band--soft" id="faq">
+  <div class="wrap">
+    <h2 class="h2">Вопрос — ответ</h2>
+    <div class="faq">
+      <details>
+        <summary>Можно ли шагать босиком?</summary>
+        <p>Тренироваться можно и босиком! Но если у вас есть особенность стопы — занимайтесь в удобных кроссовках.</p>
+      </details>
+      <details>
+        <summary>Сколько действует абонемент?</summary>
+        <p>Абонемент действует со дня покупки в течение того времени, на которое вы его приобретаете. То есть, если вы покупаете абонемент на 3 месяца, то он будет действовать в течение 90 дней со дня покупки.</p>
+      </details>
+      <details>
+        <summary>На какой срок будет доступ к тренировкам?</summary>
+        <p>Доступ к тренировкам у вас будет открыт, пока действует абонемент. По окончании абонемента, чтобы продолжать тренироваться, нужно продлить доступ.</p>
+      </details>
+      <details>
+        <summary>Как долго закрепляется привычка заниматься?</summary>
+        <p>По статистике, требуется 21 день, чтобы тренировки вошли в привычку.</p>
+      </details>
+      <details>
+        <summary>Какая нормальная продолжительность тренировки?</summary>
+        <p>15 минут достаточно, особенно если вы — новичок. Начните с небольшой нагрузки и постепенно увеличивайте.</p>
+      </details>
+      <details>
+        <summary>Как я получу доступ к тренировкам?</summary>
+        <p>Письмо с доступом к курсу и чату клуба придёт вам сразу после оплаты на почту, которую вы указали в заказе. Если письмо не пришло сразу, проверьте папку «спам». Если письмо вы нигде не нашли, то напишите нам.</p>
+      </details>
+      <details>
+        <summary>Тренировки проходят онлайн или в записи?</summary>
+        <p>Все тренировки в записи, их можно смотреть в любое время.</p>
+      </details>
+      <details>
+        <summary>На какой платформе тренировки?</summary>
+        <p>Тренировки на платформах getcourse и youtube, личный кабинет на платформе getcourse. Вы можете смотреть тренировки на любых устройствах: от телефона до телевизора.</p>
+      </details>
+      <details>
+        <summary>Как отказаться от абонемента?</summary>
+        <p>По публичной оферте отказаться можно в любое время: напишите на <a href="mailto:mail@walk-walk.ru">mail@walk-walk.ru</a> либо через поддержку или личный кабинет. Сумма возврата считается по правилам оферты (шкала минимального возврата сравнивается с оплаченной, но ещё не оказанной частью — выплачивается большая сумма). Если услуга ещё не начиналась и расходов нет, возврат составляет 100%. Подробности — в <a href="https://walk-walk.ru/offer" target="_blank" rel="noopener">публичной оферте</a>, разделы 5–6.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__col footer__col--main">
+      <h2 class="footer__brand">Шагай Дома</h2>
+      <div class="footer__phones">
+        <p class="footer__phones-title">Телефоны наших менеджеров:</p>
+        <p><a href="tel:+79990668100">+7&nbsp;(999)&nbsp;066-81-00</a> — Отдел заботы о&nbsp;клиентах (менеджеры Оксана и&nbsp;Римма)</p>
+        <p><a href="tel:+79155261246">+7&nbsp;(915)&nbsp;526-12-46</a> — Отдел заботы о&nbsp;клиентах (менеджер Александра)</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="https://walk-walk.ru/privacy" target="_blank" rel="noopener">Политика конфиденциальности</a></li>
+        <li><a href="https://walk-walk.ru/offer" target="_blank" rel="noopener">Публичная оферта</a></li>
+        <li><a href="https://walk-walk.ru/ad" target="_blank" rel="noopener">Согласие на&nbsp;рекламную рассылку</a></li>
+        <li><a href="https://walk-walk.ru/approval" target="_blank" rel="noopener">Согласие на&nbsp;обработку персональных данных</a></li>
+        <li><a href="https://walk-walk.ru/safe" target="_blank" rel="noopener">Список противопоказаний</a></li>
+        <li><a href="https://walk-walk.ru/education" target="_blank" rel="noopener">Сведения об&nbsp;образовательной организации</a></li>
+      </ul>
+    </div>
+    <div class="footer__col footer__col--legal">
+      <p>ИП Кириченко Дмитрий Павлович</p>
+      <p>ОГРНИП: 316222500086383</p>
+      <p>ИНН: 222391942312</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <span>© ИП Кириченко Д.П., <span id="footerYear">2026</span>&nbsp;· Шагай Дома</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="sticky__text"><b>Пробная тренировка</b></div>
+  <a class="btn btn--yellow sticky__btn" href="#trial" data-goal="sticky-cta">Включить</a>
+</div>
+
+<div class="paydlg" id="payDlg" hidden>
+  <div class="paydlg__win" role="dialog" aria-modal="true" aria-labelledby="payDlgTitle" aria-describedby="payDlgSub" tabindex="-1">
+    <div class="paydlg__head">
+      <div>
+        <p class="paydlg__t" id="payDlgTitle">Абонемент на&nbsp;6&nbsp;месяцев</p>
+        <p class="paydlg__s" id="payDlgSub">Клуб «Шагай Дома» — единый абонемент на всё</p>
+      </div>
+      <button class="paydlg__x" type="button" aria-label="Закрыть окно"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="paydlg__body pay" id="payBox"><span class="pay__spin" aria-hidden="true"></span></div>
+  </div>
+</div>
+
+<script src="script.js?v=trial-3"></script>
+</body>
+</html>
