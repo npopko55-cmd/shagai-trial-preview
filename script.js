@@ -35,36 +35,20 @@
     } catch (err) {}
   }
 
-  /* ---------- Видео: показать плеер, если файл доступен ---------- */
+  /* ---------- Видео: YouTube embed Zevc2_CBDnk (oEmbed проверен) ---------- */
+  var YT_EMBED = 'https://www.youtube-nocookie.com/embed/Zevc2_CBDnk';
   var video = document.getElementById('trialVideo');
-  var frame = document.getElementById('trialFrame');
-  var ready = false;
-
-  function showPlayer() {
-    ready = true;
-    if (frame) frame.classList.remove('is-empty');
-  }
-  function showPlaceholder() {
-    ready = false;
-    if (frame) frame.classList.add('is-empty');
-  }
-  if (video) {
-    video.addEventListener('loadedmetadata', function () {
-      if (video.duration && isFinite(video.duration) && video.duration > 0) showPlayer();
-      else showPlaceholder();
-    });
-    video.addEventListener('error', showPlaceholder);
-    video.addEventListener('canplay', showPlayer);
-    /* если src уже 404, readyState останется 0 */
-    if (video.readyState >= 1 && video.duration > 0) showPlayer();
-  }
 
   function playTrial(e) {
     if (e) e.preventDefault();
     var slot = document.getElementById('trial');
     if (slot && slot.scrollIntoView) slot.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    if (ready && video) {
-      try { video.play(); } catch (err) {}
+    if (video && video.tagName === 'IFRAME') {
+      try {
+        if (video.src.indexOf('autoplay=1') === -1) {
+          video.src = YT_EMBED + '?rel=0&playsinline=1&autoplay=1';
+        }
+      } catch (err) {}
     }
   }
   var trialCta = document.getElementById('trialCta');

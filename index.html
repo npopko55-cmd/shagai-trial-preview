@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&family=Unbounded:wght@500&family=Sofia+Sans+Extra+Condensed:ital,wght@1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=trial-3" />
+<link rel="stylesheet" href="styles.css?v=trial-4" />
 </head>
 <body>
 
@@ -19,8 +19,9 @@
      1. ПЕРВЫЙ ЭКРАН — пробная тренировка
      H1 — согласованная формулировка Никиты, 23.11.2026.
      Подзаголовок без обещания результата похудения (оферта п. 6.1).
-     Видео: нативный <video>, src video/trial.mp4. Пока файла нет —
-     подписанная заглушка (см. script.js).
+     Видео: официальный YouTube, id Zevc2_CBDnk (oEmbed 200,
+     playableInEmbed true, 23.11.2026). Встройка youtube-nocookie,
+     формат 9:16 — ролик вертикальный. Старый id 2vxc2_cR0nk ошибочен.
      ============================================================ -->
 <section class="hero hero--trial" id="top">
   <div class="hero__panel" aria-hidden="true"></div>
@@ -37,16 +38,11 @@
     </div>
     <div class="hero__visual">
       <figure class="trial-slot" id="trial">
-        <div class="trial-slot__frame is-empty" id="trialFrame">
-          <video id="trialVideo" controls playsinline preload="metadata" src="video/trial.mp4" poster="video/poster.jpg" title="Пробная тренировка: Мираж — Музыка нас связала, с Настей">
-            Ваш браузер не воспроизводит встроенное видео.
-          </video>
-          <div class="trial-slot__ph" id="trialPlaceholder">
-            <strong>Пробная тренировка</strong>
-            <span>Ролик появится здесь, как только файл будет на странице. «Мираж — Музыка нас связала», с Настей, 4,5 минуты. Программа «Русские хиты».</span>
-          </div>
+        <div class="trial-slot__frame" id="trialFrame">
+          <img class="trial-slot__fallback" src="video/poster.jpg" width="720" height="1280" alt="" aria-hidden="true" />
+          <iframe id="trialVideo" src="https://www.youtube-nocookie.com/embed/Zevc2_CBDnk?rel=0&amp;playsinline=1" title="Мираж — Музыка нас связала [с Настей] (4,5 минуты)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <figcaption class="trial-slot__cap">Мираж — Музыка нас связала · с Настей · 4,5 минуты · программа «Русские хиты»</figcaption>
+        <figcaption class="trial-slot__cap">Мираж — Музыка нас связала · с Настей · 4,5 минуты · программа «Русские хиты». <a href="https://www.youtube.com/watch?v=Zevc2_CBDnk" target="_blank" rel="noopener">Открыть на YouTube</a></figcaption>
       </figure>
     </div>
   </div>
@@ -238,6 +234,6 @@
   </div>
 </div>
 
-<script src="script.js?v=trial-3"></script>
+<script src="script.js?v=trial-4"></script>
 </body>
 </html>
